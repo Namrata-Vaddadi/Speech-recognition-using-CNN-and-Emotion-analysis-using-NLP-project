@@ -1,79 +1,89 @@
-Speech Classification and Emotion Analysis Project
-[![Python](https://img.shields.io/badge/PythonTensoro complementary machine learning projects demonstrating advanced audio and natural language processing techniques:
+# Speech Classification and Emotion Analysis
 
-Speech Classification:
-A Convolutional Neural Network (CNN)-based model trained to classify 6 speech categories — bird, dog, cat, down, eight, and bed — using a diverse dataset sourced from Kaggle with over 1200 audio samples (200 files per category). The model achieves an accuracy of approximately 84% after 50 training epochs, showcasing robust feature extraction from audio signals.
+![Python](https://img.shields.io/badge/Python-TensorFlow-blue)
 
-Emotion Analysis from Twitter News:
-A Natural Language Processing (NLP) pipeline designed to analyze text data from Twitter news feeds for emotion classification. The model achieves 75% accuracy, emphasizing the effectiveness of textual sentiment analysis on social media data.
+This repository contains complementary machine learning projects demonstrating advanced audio and natural language processing techniques for speech classification and emotion analysis.
 
-Features
-Speech Classification
+## Projects Overview
 
-Audio preprocessing and feature extraction (e.g., MFCC, spectrograms)
+### Speech Classification
+- **Objective:** Classify 6 speech categories — bird, dog, cat, down, eight, and bed — using audio data.
+- **Dataset:** Over 1200 audio samples (200 files per category) sourced from Kaggle.
+- **Approach:** CNN-based model optimized for speech recognition.
+- **Performance:** Achieves ~84% accuracy after 50 epochs.
+- **Features:**
+  - Audio preprocessing (MFCC, spectrograms)
+  - CNN architecture tailored for audio feature extraction
+  - Detailed training/testing accuracy tracking
 
-CNN model architecture tailored for speech recognition
+### Emotion Analysis from Twitter News
+- **Objective:** Classify emotions in Twitter news text data.
+- **Approach:** NLP pipeline for emotion classification.
+- **Performance:** ~75% accuracy.
+- **Features:**
+  - Text preprocessing (tokenization, normalization, stopword removal)
+  - Emotion classification techniques for sentiment analysis
 
-Training and testing with detailed accuracy tracking
+## Installation
 
-Emotion Analysis
+Clone the repository:
 
-Text preprocessing: tokenization, normalization, stopword removal
-
-Emotion classification using NLP techniques
-
-Installation
-Clone this repository:
-
-bash
 git clone https://github.com/yourusername/speech-emotion-analysis.git
 cd speech-emotion-analysis
-Install dependencies (recommended to use a virtual environment):
 
-bash
+text
+
+Install dependencies (recommended: use a virtual environment):
+
 pip install -r requirements.txt
-Download and prepare datasets according to instructions in the DATASETS.md file.
 
-Usage
-Speech Classification
+text
+
+Download and prepare datasets following `DATASETS.md` instructions.
+
+## Usage
+
+### Speech Classification
+
 Train the CNN model:
 
-bash
 python train_speech_model.py --epochs 50
-Evaluate and predict on test samples:
 
-bash
+text
+
+Evaluate and predict on test audio:
+
 python evaluate_speech_model.py --input <audio_file>
-Emotion Analysis
+
+text
+
+### Emotion Analysis
+
 Run emotion classification on Twitter news data:
 
-bash
 python run_emotion_analysis.py --input <twitter_news_file>
-See classification report and accuracy metrics in output.
 
-Results
-Speech model accuracy: ~84% after 50 epochs.
+text
 
-Emotion analysis accuracy: ~75% on Twitter news text.
+Check classification report and accuracy metrics in the output.
 
-The repository contains sample graphs, model checkpoints, and detailed logs.
+## Results
 
-Future Work
-Integrate both pipelines for real-time emotion recognition from speech input.
+- Speech classification accuracy: ~84% after 50 epochs.
+- Emotion analysis accuracy: ~75% on Twitter news text.
 
-Expand speech categories and dataset size to improve performance.
+Includes sample graphs, model checkpoints, and logs.
 
-Deploy interactive web or mobile app interface.
+## Future Work
 
-License
-This project is licensed under the MIT License. 
+- Real-time emotion recognition from speech integration.
+- Expand speech categories and dataset size.
+- Deploy interactive web or mobile app interface.
 
-Acknowledgements
+## License
 
-Special thanks to course instructors and open-source communities contributing essential tools.
+This project is licensed under the MIT License.
 
+## Acknowledgements
 
-
-Handling noisy real-world Twitter textual data
-
-Modular structure enabling independent use or future integration for combined applications.
+Thanks to course instructors and open-source communities for tools and support.
